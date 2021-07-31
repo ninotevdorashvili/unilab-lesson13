@@ -1,0 +1,21 @@
+@mixin d-flex ($display:flex, $justify:flex-start,$align:flex-start) {
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin bgimage($size:cover,$rep:no-repeat,$pos:center) {
+
+    background-size: $size;
+    background-repeat: $rep;
+    background-position: $pos;
+}
+@mixin size ($max, $width) {
+    max-width: $max;
+    width: $width;
+    
+}
+@mixin columcent ($fdirect,$algn) {
+    flex-direction: $fdirect;
+    align-items: $algn;
+    
+}

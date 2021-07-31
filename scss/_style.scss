@@ -1,0 +1,129 @@
+// header-style
+header {
+    @include d-flex (flex,space-between,center);
+    height: $size1;
+    width: 90%;
+    margin: auto;
+    .navigation {
+        ul {
+            @media(max-width:770px) {
+                display: none;
+            }
+            @include d-flex (flex,space-between,start);
+            width: 499px;
+        }
+    }
+    .fa-bars {
+        @media(max-width:770px) {
+            display: block;
+        }
+        display: none;
+    }
+}
+.section1 {
+    margin-top: $size1;
+    .bgimage{
+        width: 100%;
+        height: 570px;
+        background-image: url('../images/banner.jpg');
+        @include bgimage;
+        @include d-flex (flex,center,center);
+        .bgimage-text{
+            @include size (586px,100%);
+            text-align: center;
+            &-title1{
+                font-size: 78px;
+                color: $white;
+            }
+            &-title2{
+                font-size: $fontsize;
+                color: $white;
+            }
+        }
+    }
+}
+.section2{
+    margin-top:75px;
+    @media (max-width:1214px) {
+        padding: 0 15px;
+    }
+    &-container {
+        @media (max-width:1157px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @extend %container;
+        @include d-flex (flex,space-between);
+        .text-block {
+            @media (max-width:1157px){
+                margin-bottom: 20px;
+                @include size (400px, 100%)
+            }
+            @include size (242px,100%);
+            &-title1{
+                font-size: $fontsize;
+                color: $color;
+                &:hover {
+                    color:#1A1A1B;
+                }
+            }
+            &-title2{
+                font-size: 26px;
+                margin: 3px 0 39px;
+            }
+            p {
+                font-size: $fontsize;
+                color: $color;
+            }
+        }
+    }
+    .image-block {
+        @media (max-width:915px) {
+            justify-content: center;
+        }
+        @media (max-width:615px){
+            @include columcent (column,center);
+        }
+        @include size (875px,100%);
+        @include d-flex (flex);
+        flex-wrap: wrap;
+        .block {
+            @include size (269px,100%);
+            h3{
+                font-size: $fontsize;
+                color: #1A1A1B;
+            }
+            p {
+                font-size: $fontsize;
+                color: $color;
+                margin: 20px 0 8px;
+                &:hover {
+                    color:#1A1A1B;
+                }
+            }
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3){
+                margin-bottom: 21px;
+            }
+            &:nth-child(2),
+            &:nth-child(5) {
+                @media (max-width:915px) {
+                    margin: 0;
+                }
+                margin: 0 31px;
+            }
+            &:nth-child(1),
+            &:nth-child(3),
+            &:nth-child(5) {
+                @media (max-width:915px){
+                    margin:0 31px 0 0 ; 
+                }
+                @media (max-width:615px) {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+} 
