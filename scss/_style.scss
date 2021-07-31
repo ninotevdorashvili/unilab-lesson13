@@ -25,7 +25,7 @@ header {
     .bgimage{
         width: 100%;
         height: 570px;
-        background-image: url('../images/banner.jpg');
+        background-image: url('../images/Banner.jpg');
         @include bgimage;
         @include d-flex (flex,center,center);
         .bgimage-text{
