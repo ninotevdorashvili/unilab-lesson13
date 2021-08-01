@@ -19,3 +19,13 @@
     align-items: $algn;
     
 }
+@mixin bl ($color:#1A1A1B,$size:$fontsize) {
+    font-family: $fontbl;
+    color: $color;
+    font-size: $size;
+}
+@mixin med ($color:$color,$size:$fontsize) {
+    font-family: $fontmed;
+    color: $color;
+    font-size: $size;
+}

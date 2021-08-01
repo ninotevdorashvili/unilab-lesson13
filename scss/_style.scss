@@ -11,6 +11,11 @@ header {
             }
             @include d-flex (flex,space-between,start);
             width: 499px;
+            li{
+                a{
+                    @include bl;
+                }
+            }
         }
     }
     .fa-bars {
@@ -32,12 +37,13 @@ header {
             @include size (586px,100%);
             text-align: center;
             &-title1{
-                font-size: 78px;
-                color: $white;
+                @include bl ($white,68px);
+                &:hover {
+                    @include bl ($white,58px);
+                }
             }
             &-title2{
-                font-size: $fontsize;
-                color: $white;
+                @include bl ($white);
             }
         }
     }
@@ -61,19 +67,17 @@ header {
             }
             @include size (242px,100%);
             &-title1{
-                font-size: $fontsize;
-                color: $color;
+                @include bl ($color);
                 &:hover {
                     color:#1A1A1B;
                 }
             }
             &-title2{
-                font-size: 26px;
-                margin: 3px 0 39px;
+                @include bl (26px);
+                margin: 10px 0 29px;
             }
             p {
-                font-size: $fontsize;
-                color: $color;
+                @include med;
             }
         }
     }
@@ -90,12 +94,10 @@ header {
         .block {
             @include size (269px,100%);
             h3{
-                font-size: $fontsize;
-                color: #1A1A1B;
+                @include bl;
             }
             p {
-                font-size: $fontsize;
-                color: $color;
+                @include med;
                 margin: 20px 0 8px;
                 &:hover {
                     color:#1A1A1B;

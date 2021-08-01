@@ -48,6 +48,22 @@ a {
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.eot");
+  src: url("../fonts/Raleway-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-SemiBold.woff2") format("woff2"), url("../fonts/Raleway-SemiBold.woff") format("woff"), url("../fonts/Raleway-SemiBold.svg#Raleway-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Medium.eot");
+  src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium.woff2") format("woff2"), url("../fonts/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 .section2-container {
   max-width: 1172px;
   width: 100%;
@@ -85,6 +101,11 @@ header .navigation ul {
     display: none;
   }
 }
+header .navigation ul li a {
+  font-family: "Raleway";
+  color: #1A1A1B;
+  font-size: 16px;
+}
 header .fa-bars {
   display: none;
 }
@@ -120,12 +141,19 @@ header .fa-bars {
   text-align: center;
 }
 .section1 .bgimage .bgimage-text-title1 {
-  font-size: 78px;
+  font-family: "Raleway";
   color: #fff;
+  font-size: 68px;
+}
+.section1 .bgimage .bgimage-text-title1:hover {
+  font-family: "Raleway";
+  color: #fff;
+  font-size: 58px;
 }
 .section1 .bgimage .bgimage-text-title2 {
-  font-size: 16px;
+  font-family: "Raleway";
   color: #fff;
+  font-size: 16px;
 }
 
 .section2 {
@@ -168,19 +196,23 @@ header .fa-bars {
   }
 }
 .section2-container .text-block-title1 {
-  font-size: 16px;
+  font-family: "Raleway";
   color: #8D8D8D;
+  font-size: 16px;
 }
 .section2-container .text-block-title1:hover {
   color: #1A1A1B;
 }
 .section2-container .text-block-title2 {
-  font-size: 26px;
-  margin: 3px 0 39px;
+  font-family: "Raleway";
+  color: 26px;
+  font-size: 16px;
+  margin: 10px 0 29px;
 }
 .section2-container .text-block p {
-  font-size: 16px;
+  font-family: "Raleway";
   color: #8D8D8D;
+  font-size: 16px;
 }
 .section2 .image-block {
   max-width: 875px;
@@ -220,12 +252,14 @@ header .fa-bars {
   width: 100%;
 }
 .section2 .image-block .block h3 {
-  font-size: 16px;
+  font-family: "Raleway";
   color: #1A1A1B;
+  font-size: 16px;
 }
 .section2 .image-block .block p {
-  font-size: 16px;
+  font-family: "Raleway";
   color: #8D8D8D;
+  font-size: 16px;
   margin: 20px 0 8px;
 }
 .section2 .image-block .block p:hover {
